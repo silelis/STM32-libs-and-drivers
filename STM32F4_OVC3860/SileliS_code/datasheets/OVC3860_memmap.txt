@@ -1,0 +1,670 @@
+Number	addr	Item					Value	
+------------------------------------------------------------------------------
+0		0x00	ool_reg04					0x00		
+------------------------------------------------------------------------------			
+1		0x01	ool_reg05					0x01	
+------------------------------------------------------------------------------	
+2		0x02	ool_reg07					0x01	
+------------------------------------------------------------------------------	
+3		0x03	ool_reg08					0x80	
+------------------------------------------------------------------------------	
+4		0x04	ool_reg0b					0xd7	
+------------------------------------------------------------------------------	
+5		0x05	ool_reg0c					0xff	
+------------------------------------------------------------------------------	
+6		0x06	ool_reg0d					0x03	
+------------------------------------------------------------------------------	
+7		0x07	btsys_mode					0x03					//HCI UART:00; HEADSET:03; CARKIT:04; AVSNK:06; MOBILE:09;
+------------------------------------------------------------------------------			
+8		0x08	sysclk						0x01					//48M:00; 24M:01; 12M:02; 36M:03;
+------------------------------------------------------------------------------	
+9		0x09	lowpow_clk					0x12	
+------------------------------------------------------------------------------	
+10		0x0A	idle_clk					0x02					//48M:00; 24M:01; 12M:02; 36M:03;
+------------------------------------------------------------------------------	
+11		0x0B	con_clk						0x01					//48M:00; 24M:01; 12M:02; 36M:03;
+------------------------------------------------------------------------------	
+12		0x0C	waketime					0x20	
+------------------------------------------------------------------------------	
+13		0x0D	radio_skew					0x0f	
+------------------------------------------------------------------------------	
+14		0x0E	clk_recov					0x81	
+------------------------------------------------------------------------------	
+15		0x0F	diag_port					0x00	
+------------------------------------------------------------------------------	
+16		0x10	sys_debug_ctrl				0x00	
+------------------------------------------------------------------------------	
+17		0x11	uart_baudrate				115200	               //Dec:1200,2400,4800,9600,14400,19200,38400,57600,115200,230400,460800,921600	
+------------------------------------------------------------------------------	
+18		0x12	gpioA_sec_func				0x60	
+------------------------------------------------------------------------------	
+19		0x13	gpioB_sec_func				0xf0	
+------------------------------------------------------------------------------	
+20		0x14	auto_conn_time				0x03	
+------------------------------------------------------------------------------	
+21		0x15	sbc_max_mute_num			0x06	
+------------------------------------------------------------------------------	
+22		0x16	gpioA_inout_sel				0x91	
+------------------------------------------------------------------------------	
+23		0x17	gpioB_inout_sel				0xff	
+------------------------------------------------------------------------------	
+24		0x18	local_bdaddr				0x00 0x1f 0x81 0x81 0x81 0x8d 	
+------------------------------------------------------------------------------	
+25		0x1E	tester_addr					0x00 0x1f 0x81 0xbd 0xbd 0xbd
+------------------------------------------------------------------------------	
+26		0x24	classofdevice				0x24 0x04 0x14 	
+------------------------------------------------------------------------------	
+27		0x27	clk_accuracy				0x00fa	
+------------------------------------------------------------------------------	
+28		0x29	clk_dis_reg					0x0000
+------------------------------------------------------------------------------	
+29		0x2B	opccr_reg					0x2f
+------------------------------------------------------------------------------	
+30		0x2C	localfeatures0				0xff	
+------------------------------------------------------------------------------	
+31		0x2D	localfeatures1				0x3e	
+------------------------------------------------------------------------------	
+32		0x2E	localfeatures2				0x0d	
+------------------------------------------------------------------------------	
+33		0x2F	localfeatures3				0x76	
+------------------------------------------------------------------------------	
+34		0x30	localfeatures4				0x80	
+------------------------------------------------------------------------------	
+35		0x31	localfeatures5				0x01	
+------------------------------------------------------------------------------	
+36		0x32	option_flag					0xe0
+------------------------------------------------------------------------------	
+37		0x33	reg_enbpreset				0x0020f020	
+------------------------------------------------------------------------------	
+38		0x37	sys_pllclk					0x88ff
+------------------------------------------------------------------------------	
+39		0x39	ool_spi_clkdiv				0x0060	
+------------------------------------------------------------------------------	
+40		0x3B	mute_opt_flag				0x00	
+------------------------------------------------------------------------------	
+41		0x3C	sleep_delay_count			0xff	
+------------------------------------------------------------------------------	
+42		0x3D	idle_ledoff_cnt				0x04	
+------------------------------------------------------------------------------	
+43		0x3E	idle_waketime				0x01	
+------------------------------------------------------------------------------	
+44		0x3F	sniff_ledcnt				0x04	
+------------------------------------------------------------------------------	
+45		0x40	ledmode						0x27
+------------------------------------------------------------------------------	
+46		0x41	idle_wakecount				0xff	
+------------------------------------------------------------------------------	
+47		0x42	master_sched_count			0x02	
+------------------------------------------------------------------------------	
+48		0x43	option_select				0x7c	
+------------------------------------------------------------------------------	
+49		0x44	sleep_intcount				0x000001ff	
+------------------------------------------------------------------------------	
+50		0x48	wd_loadvalue				0x0000	
+------------------------------------------------------------------------------	
+51		0x4A	rf_regs00	0x00	
+52		0x4B	rf_regs01	0x03	
+53		0x4C	rf_regs02	0x00	
+54		0x4D	rf_regs03	0x07	
+55		0x4E	rf_regs04	0x01	
+56		0x4F	rf_regs05	0x0b	
+57		0x50	rf_regs06	0x02	
+58		0x51	rf_regs07	0x0f	
+59		0x52	rf_regs08	0x0a	
+60		0x53	rf_regs09	0x13	
+61		0x54	rf_regs0a	0x12	
+62		0x55	rf_regs0b	0x17	
+63		0x56	rf_regs0c	0x1a	
+64		0x57	rf_regs0d	0x1b	
+65		0x58	rf_regs0e	0x22	
+66		0x59	rf_regs0f	0x1c	
+67		0x5A	rf_regs11	0x00	
+68		0x5B	rf_regs12	0x42	
+69		0x5C	rf_regs13	0x20	
+70		0x5D	rf_regs14	0x58	
+71		0x5E	rf_regs15	0x24	
+72		0x5F	rf_regs16	0x59	
+73		0x60	rf_regs17	0x28	
+74		0x61	rf_regs18	0x5a	
+75		0x62	rf_regs19	0x00	
+76		0x63	rf_regs1a	0x7a	
+77		0x64	rf_regs1b	0x00	
+78		0x65	rf_regs1c	0x9a	
+79		0x66	rf_regs1d	0x00	
+80		0x67	rf_regs1e	0xba	
+81		0x68	rf_regs1f	0x00	
+82		0x69	rf_regs22	0xa0	
+83		0x6A	rf_regs23	0x17	
+84		0x6B	rf_regs24	0x80	
+85		0x6C	rf_regs25	0x0f	
+86		0x6D	rf_regs26	0x1f	
+87		0x6E	rf_regs27	0x00	
+88		0x6F	rf_regs28	0x7c	
+89		0x70	rf_regs29	0x06	
+90		0x71	rf_regs2a	0x37	
+91		0x72	rf_regs2b	0x3f	
+92		0x73	rf_regs2c	0x59	
+93		0x74	rf_regs2d	0x66	
+94		0x75	rf_regs2e	0x00	
+95		0x76	rf_regs2f	0x00	
+96		0x77	rf_regs30	0x00	
+97		0x78	rf_regs31	0x30	
+98		0x79	rf_regs32	0x03	
+99		0x7A	rf_regs33	0xf0	
+100		0x7B	rf_regs34	0x02	
+101		0x7C	rf_regs37	0x00	
+102		0x7D	rf_regs38	0x00	
+103		0x7E	rf_regs39	0x1e	
+104		0x7F	rf_regs3a	0x0b	
+105		0x80	rf_regs3b	0x05	
+106		0x81	rf_regs3c	0x8c	
+107		0x82	rf_regs3d	0x12	
+108		0x83	rf_regs3e	0x00	
+109		0x84	rf_regs3f	0x00	
+110		0x85	rf_regs41	0x18	
+111		0x86	rf_regs42	0xff	
+112		0x87	rf_regs43	0x03	
+113		0x88	rf_regs44	0x39	
+114		0x89	rf_regs45	0x16	
+115		0x8A	rf_regs46	0x40	
+116		0x8B	rf_regs47	0x00	
+117		0x8C	rf_regs48	0x04	
+118		0x8D	rf_regs49	0x02	
+119		0x8E	rf_regs4d	0x28	
+120		0x8F	rf_regs4e	0x66	
+121		0x90	rf_regs4f	0xc8	
+122		0x91	rf_regs50	0xde	
+123		0x92	rf_regs51	0xff	
+124		0x93	rf_regs52	0x80	
+125		0x94	rf_regs53	0x40	
+126		0x95	rf_regs54	0x72	
+127		0x96	rf_regs55	0xf5	
+128		0x97	rf_regs56	0x0f	
+129		0x98	rf_regs57	0x00	
+130		0x99	rf_regs58	0x10	
+131		0x9A	rf_regs59	0x80	
+132		0x9B	rf_regs5a	0x00	
+133		0x9C	rf_regs5b	0xfe	
+134		0x9D	rf_regs5c	0xc0	
+135		0x9E	rf_regs5d	0x78	
+136		0x9F	rf_regs5e	0x05	
+137		0xA0	rf_regs5f	0x05	
+138		0xA1	rf_regs60	0x00	
+139		0xA2	rf_regs61	0x30	
+140		0xA3	rf_regs62	0x00	
+141		0xA4	rf_regs64	0x5f	
+142		0xA5	rf_regs65	0x18	
+143		0xA6	rf_regs67	0x80	
+144		0xA7	rf_regs68	0xb4	
+145		0xA8	rf_regs6b	0x00	
+146		0xA9	rf_regs6c	0x05	
+147		0xAA	rf_regs6d	0x0a	
+148		0xAB	rf_regs6e	0x0f	
+149		0xAC	rf_regs6f	0x1e	
+150		0xAD	rf_regs70	0x82	
+151		0xAE	rf_regs71	0x01	
+152		0xAF	rf_regs72	0x03	
+153		0xB0	rf_regs73	0x07	
+154		0xB1	rf_regs74	0x0f	
+155		0xB2	rf_regs75	0x1f	
+156		0xB3	rf_regs76	0x3f	
+157		0xB4	rf_regs77	0x77	
+158		0xB5	rf_regs78	0x77	
+159		0xB6	rf_regs79	0x77	
+160		0xB7	rf_regs7a	0x77	
+161		0xB8	rf_regs7b	0x02	
+162		0xB9	rf_regs7c	0x01	
+163		0xBA	rf_regs7d	0x08	
+164		0xBB	rf_regs7e	0x40	
+165		0xBC	rf_regs7f	0x3f	
+166		0xBD	rf_regs80	0x00	
+167		0xBE	rf_regs81	0x00	
+168		0xBF	rf_regs82	0x10	
+169		0xC0	rf_regs83	0x00	
+170		0xC1	rf_regs84	0x10	
+171		0xC2	rf_regs85	0x10	
+172		0xC3	rf_regs86	0x06	
+173		0xC4	rf_regs87	0x08	
+174		0xC5	rf_regs88	0x0a	
+175		0xC6	rf_regs89	0x0c	
+176		0xC7	rf_regs8a	0x0f	
+177		0xC8	rf_regs8b	0x11	
+178		0xC9	rf_regs8c	0x16	
+179		0xCA	rf_regs8d	0x20	
+180		0xCB	rf_regs8e	0x30	
+181		0xCC	rf_regs8f	0x25	
+182		0xCD	rf_regs90	0x00	
+183		0xCE	rf_regs91	0x51	
+184		0xCF	rf_regs92	0xd6	
+185		0xD0	rf_regs93	0x00	
+186		0xD1	rf_regs9c	0x00	
+187		0xD2	rf_regs9d	0xff	
+188		0xD3	rf_regsa2	0x20	
+189		0xD4	rf_regsa3	0x10	
+190		0xD5	rf_regsa4	0x0a	
+191		0xD6	rf_regsa5	0x0a	
+192		0xD7	rf_regsa6	0x80	
+193		0xD8	rf_regsa7	0xd2	
+194		0xD9	rf_regsa8	0x50	
+------------------------------------------------------------------------------
+195		0xDA	lvd_reserved					0x20	
+------------------------------------------------------------------------------
+196		0xDB	app_btn_num						0x05
+------------------------------------------------------------------------------
+197		0xDC	dure_short						0x03
+------------------------------------------------------------------------------
+198		0xDD	dure_long						0x1e
+------------------------------------------------------------------------------
+199		0xDE	dure_vlong						0x30
+------------------------------------------------------------------------------
+200		0xDF	dure_repeat						0x08
+------------------------------------------------------------------------------
+201		0xE0	dure_dshort_interval		    0x08
+------------------------------------------------------------------------------
+202		0xE1	dure_hold						0x14
+------------------------------------------------------------------------------
+203		0xE2	func_vol1_short					0x00	
+------------------------------------------------------------------------------
+204		0xE3	func_vol1_hold					0x00	
+------------------------------------------------------------------------------
+205		0xE4	func_vol2_short					0x00	
+------------------------------------------------------------------------------
+206		0xE5	func_vol2_hold					0x00	
+------------------------------------------------------------------------------
+207		0xE6	on_acok							0x00	
+------------------------------------------------------------------------------
+208		0xE7	app_status_num					0x0c	
+------------------------------------------------------------------------------
+209		0xE8	led_para[00]	app_status:           0x02	
+210		0xE9	led_para[00]	led_on_time:          0x14	
+211		0xEA	led_para[00]	led_off_time:         0x5a	
+212		0xEB	led_para[00]	led_repeat_time:      0x10	
+213		0xEC	led_para[00]	led_flash_num:        0x01	
+214		0xED	led_para[00]	led_color:            0x00	
+215		0xEE	led_para[01]	app_status:           0x03	
+216		0xEF	led_para[01]	led_on_time:          0x0a	
+217		0xF0	led_para[01]	led_off_time:         0x22	
+218		0xF1	led_para[01]	led_repeat_time:      0x26	
+219		0xF2	led_para[01]	led_flash_num:        0x01	
+220		0xF3	led_para[01]	led_color:            0x00	
+221		0xF4	led_para[02]	app_status:           0x04	
+222		0xF5	led_para[02]	led_on_time:          0x19	
+223		0xF6	led_para[02]	led_off_time:         0x19	
+224		0xF7	led_para[02]	led_repeat_time:      0x00	
+225		0xF8	led_para[02]	led_flash_num:        0x01	
+226		0xF9	led_para[02]	led_color:            0x03	
+227		0xFA	led_para[03]	app_status:           0x05	
+228		0xFB	led_para[03]	led_on_time:          0x08	
+229		0xFC	led_para[03]	led_off_time:         0x22	
+230		0xFD	led_para[03]	led_repeat_time:      0x32	
+231		0xFE	led_para[03]	led_flash_num:        0x02	
+232		0xFF	led_para[03]	led_color:            0x00	
+233		0x100	led_para[04]	app_status:           0x07	
+234		0x101	led_para[04]	led_on_time:          0x08	
+235		0x102	led_para[04]	led_off_time:         0x26	
+236		0x103	led_para[04]	led_repeat_time:      0x28	
+237		0x104	led_para[04]	led_flash_num:        0x03	
+238		0x105	led_para[04]	led_color:            0x00	
+239		0x106	led_para[05]	app_status:           0x01	
+240		0x107	led_para[05]	led_on_time:          0x05	
+241		0x108	led_para[05]	led_off_time:         0x05	
+242		0x109	led_para[05]	led_repeat_time:      0x13	
+243		0x10A	led_para[05]	led_flash_num:        0x01	
+244		0x10B	led_para[05]	led_color:            0x01	
+245		0x10C	led_para[06]	app_status:           0x06	
+246		0x10D	led_para[06]	led_on_time:          0x14	
+247		0x10E	led_para[06]	led_off_time:         0x14	
+248		0x10F	led_para[06]	led_repeat_time:      0x04	
+249		0x110	led_para[06]	led_flash_num:        0x02	
+250		0x111	led_para[06]	led_color:            0x00	
+251		0x112	led_para[07]	app_status:           0x08	
+252		0x113	led_para[07]	led_on_time:          0x14	
+253		0x114	led_para[07]	led_off_time:         0x1e	
+254		0x115	led_para[07]	led_repeat_time:      0x00	
+255		0x116	led_para[07]	led_flash_num:        0x03	
+256		0x117	led_para[07]	led_color:            0x00	
+257		0x118	led_para[08]	app_status:           0x09	
+258		0x119	led_para[08]	led_on_time:          0x0f	
+259		0x11A	led_para[08]	led_off_time:         0x0f	
+260		0x11B	led_para[08]	led_repeat_time:      0x00	
+261		0x11C	led_para[08]	led_flash_num:        0x05	
+262		0x11D	led_para[08]	led_color:            0x00	
+263		0x11E	led_para[09]	app_status:           0x0a	
+264		0x11F	led_para[09]	led_on_time:          0x0a	
+265		0x120	led_para[09]	led_off_time:         0x0a	
+266		0x121	led_para[09]	led_repeat_time:      0x00	
+267		0x122	led_para[09]	led_flash_num:        0x06	
+268		0x123	led_para[09]	led_color:            0x00	
+269		0x124	led_para[10]	app_status:           0x0b	
+270		0x125	led_para[10]	led_on_time:          0x0a	
+271		0x126	led_para[10]	led_off_time:         0x1e	
+272		0x127	led_para[10]	led_repeat_time:      0x3c	
+273		0x128	led_para[10]	led_flash_num:        0x04	
+274		0x129	led_para[10]	led_color:            0x00	
+275		0x12A	led_para[11]	app_status:           0x0c	
+276		0x12B	led_para[11]	led_on_time:          0x0a	
+277		0x12C	led_para[11]	led_off_time:         0x1e	
+278		0x12D	led_para[11]	led_repeat_time:      0x3c	
+279		0x12E	led_para[11]	led_flash_num:        0x04	
+280		0x12F	led_para[11]	led_color:            0x00	
+------------------------------------------------------------------------------
+281		0x130	tone_conf[00]	size_array:         0x01	
+282		0x131	tone_conf[00]	tone_array[0]:      0x1c	
+283		0x132	tone_conf[00]	tone_array[1]:      0x02	
+284		0x133	tone_conf[00]	tone_array[2]:      0x02	
+285		0x134	tone_conf[00]	cnt:                0x01	
+286		0x135	tone_conf[01]	size_array:         0x01	
+287		0x136	tone_conf[01]	tone_array[0]:      0x1a	
+288		0x137	tone_conf[01]	tone_array[1]:      0xff	
+289		0x138	tone_conf[01]	tone_array[2]:      0xff	
+290		0x139	tone_conf[01]	cnt:                0x01	
+291		0x13A	tone_conf[02]	size_array:         0x01	
+292		0x13B	tone_conf[02]	tone_array[0]:      0x00	
+293		0x13C	tone_conf[02]	tone_array[1]:      0xff	
+294		0x13D	tone_conf[02]	tone_array[2]:      0xff	
+295		0x13E	tone_conf[02]	cnt:                0x01	
+296		0x13F	tone_conf[03]	size_array:         0x01	
+297		0x140	tone_conf[03]	tone_array[0]:      0x0c	
+298		0x141	tone_conf[03]	tone_array[1]:      0xff	
+299		0x142	tone_conf[03]	tone_array[2]:      0xff	
+300		0x143	tone_conf[03]	cnt:                0x01	
+301		0x144	tone_conf[04]	size_array:         0x01	
+302		0x145	tone_conf[04]	tone_array[0]:      0x11	
+303		0x146	tone_conf[04]	tone_array[1]:      0x01	
+304		0x147	tone_conf[04]	tone_array[2]:      0xff	
+305		0x148	tone_conf[04]	cnt:                0x01	
+306		0x149	tone_conf[05]	size_array:         0x01	
+307		0x14A	tone_conf[05]	tone_array[0]:      0x09	
+308		0x14B	tone_conf[05]	tone_array[1]:      0x03	
+309		0x14C	tone_conf[05]	tone_array[2]:      0xff	
+310		0x14D	tone_conf[05]	cnt:                0x01	
+311		0x14E	tone_conf[06]	size_array:         0x01	
+312		0x14F	tone_conf[06]	tone_array[0]:      0x17	
+313		0x150	tone_conf[06]	tone_array[1]:      0xff	
+314		0x151	tone_conf[06]	tone_array[2]:      0xff	
+315		0x152	tone_conf[06]	cnt:                0x01	
+316		0x153	tone_conf[07]	size_array:         0x01	
+317		0x154	tone_conf[07]	tone_array[0]:      0x1d	
+318		0x155	tone_conf[07]	tone_array[1]:      0x05	
+319		0x156	tone_conf[07]	tone_array[2]:      0xff	
+320		0x157	tone_conf[07]	cnt:                0x01	
+321		0x158	tone_conf[08]	size_array:         0x01	
+322		0x159	tone_conf[08]	tone_array[0]:      0x1b	
+323		0x15A	tone_conf[08]	tone_array[1]:      0xff	
+324		0x15B	tone_conf[08]	tone_array[2]:      0xff	
+325		0x15C	tone_conf[08]	cnt:                0x01	
+326		0x15D	tone_conf[09]	size_array:         0x01	
+327		0x15E	tone_conf[09]	tone_array[0]:      0x0e	
+328		0x15F	tone_conf[09]	tone_array[1]:      0x03	
+329		0x160	tone_conf[09]	tone_array[2]:      0xff	
+330		0x161	tone_conf[09]	cnt:                0x01	
+331		0x162	tone_conf[10]	size_array:         0x01	
+332		0x163	tone_conf[10]	tone_array[0]:      0x0a	
+333		0x164	tone_conf[10]	tone_array[1]:      0xff	
+334		0x165	tone_conf[10]	tone_array[2]:      0xff	
+335		0x166	tone_conf[10]	cnt:                0x01	
+336		0x167	tone_conf[11]	size_array:         0x01	
+337		0x168	tone_conf[11]	tone_array[0]:      0x16	
+338		0x169	tone_conf[11]	tone_array[1]:      0x01	
+339		0x16A	tone_conf[11]	tone_array[2]:      0xff	
+340		0x16B	tone_conf[11]	cnt:                0x01	
+------------------------------------------------------------------------------
+341		0x16C	ringtone	tone_array[00]:   		0x18	
+342		0x16D		tone_array[01]:   0x03	
+343		0x16E		tone_array[02]:   0x03	
+344		0x16F		tone_array[03]:   0x03	
+345		0x170		tone_array[04]:   0x63	
+346		0x171		tone_array[05]:   0x0e	
+347		0x172		tone_array[06]:   0x06	
+348		0x173		tone_array[07]:   0x0a	
+349		0x174		tone_array[08]:   0x20	
+350		0x175		tone_array[09]:   0x09	
+351		0x176		tone_array[10]:   0x05	
+352		0x177		tone_array[11]:   0x35	
+353		0x178		tone_array[12]:   0xd6	
+354		0x179		tone_array[13]:   0x08	
+355		0x17A		size_array:      0x01	
+356		0x17B		cnt:   0x01	
+357		0x17C		useLocal:   0x00	
+------------------------------------------------------------------------------
+358		0x17D	lvdtone	tone_array[00]:   		0x0b	
+359		0x17E		tone_array[01]:   			0x03	
+360		0x17F		tone_array[02]:   			0x05	
+361		0x180		tone_array[03]:   			0xff	
+362		0x181		size_array:      			0x03	
+363		0x182		cnt:   						0x01	
+364		0x183		interval:   				0x03e8	
+------------------------------------------------------------------------------
+365		0x185	mutetone	tone_array[00]:   	0x0f	
+366		0x186		tone_array[01]:   			0xff	
+367		0x187		tone_array[02]:   			0x0a	
+368		0x188		tone_array[03]:   			0x0a	
+369		0x189		size_array:      			0x01	
+370		0x18A		cnt:   						0x01	
+371		0x18B		interval:   				0x012c
+------------------------------------------------------------------------------	
+372		0x18D	app_btn_mask_bit					0x04	
+------------------------------------------------------------------------------
+373		0x18E	app_to_pairing						0x00	
+------------------------------------------------------------------------------
+374		0x18F	app_to_autooff						0x00	
+------------------------------------------------------------------------------
+375		0x190	app_to_autoconn						0x0f	
+------------------------------------------------------------------------------
+376		0x191	app_to_sniff						0x05	
+------------------------------------------------------------------------------
+377		0x192	app_vol_spk							0x0f	
+------------------------------------------------------------------------------
+378		0x193	app_vol_mic							0x02	
+------------------------------------------------------------------------------
+379		0x194	isAutoConnect						0x01	
+------------------------------------------------------------------------------
+380		0x195	isAutoPair							0x01	
+------------------------------------------------------------------------------
+381		0x196	isAutoAnswer						0x01	
+------------------------------------------------------------------------------
+382		0x197	isP2MPSupport						0x01	
+------------------------------------------------------------------------------
+383		0x198	app_hf_feature						0x1c	
+------------------------------------------------------------------------------
+384		0x199	app_av_feature						0x01	
+------------------------------------------------------------------------------
+385		0x19A	app_avc_feature						0x01	
+------------------------------------------------------------------------------
+386		0x19B	sdp_max_attr_byte_cnt				0x0058	
+------------------------------------------------------------------------------
+387		0x19D	codec_para	reg_r00:   				0x05	
+------------------------------------------------------------------------------
+388		0x19E		reg_r04:  	 0x03	
+389		0x19F		reg_r05:  	 0x0e	
+390		0x1A0		reg_r07:   	 0x0e	
+391		0x1A1		reg_r09_iis: 0x02	
+392		0x1A2		reg_r0a:   	0x81	
+393		0x1A3		reg_r0b:   	0x00	
+394		0x1A4		reg_r0c:   	0x3f	
+395		0x1A5		reg_r12:   	0x9c	
+396		0x1A6		reg_r15:   	0xf1	
+397		0x1A7		reg_r16:   	0x90	
+398		0x1A8		reg_r17:   	0x80	
+399		0x1A9		reg_r18:   	0x80	
+400		0x1AA		reg_r1a:   	0x90	
+401		0x1AB		reg_r1b:   	0x23	
+402		0x1AC		reg_r1d:   	0xff	
+403		0x1AD		reg_r1e:   	0xff	
+404		0x1AE		reg_r1f:   	0xff	
+405		0x1AF		reg_r20:   	0x7b	
+406		0x1B0		reg_r21:   	0x00	
+407		0x1B1		reg_r22:   	0x32	
+408		0x1B2		reg_r23:   	0x00	
+409		0x1B3		reg_r12_iis:   0x9c	
+410		0x1B4		reg_r12_pcm:   0x1c	
+411		0x1B5		reg_r09_pcm:   0x03	
+------------------------------------------------------------------------------
+412		0x1B6	pcm_en								0x8020	
+------------------------------------------------------------------------------
+413		0x1B7	pcm_reg								0x073d	
+------------------------------------------------------------------------------
+414		0x1B9	extint_ctrl							0x005555ff	
+------------------------------------------------------------------------------
+415		0x1BE	uart_flowctl						0x00	
+------------------------------------------------------------------------------
+416		0x1BF	pincode								0000	
+------------------------------------------------------------------------------
+417		0x1C7	localname							MICRA_BT
+------------------------------------------------------------------------------
+418		0x1D7	dma_line_reg						0x20	
+------------------------------------------------------------------------------
+419		0x1D8	opera_mem							0x85	
+------------------------------------------------------------------------------
+420		0x1D9	content0							0x03f4	
+------------------------------------------------------------------------------
+421		0x1DB	content1							0x1600	
+------------------------------------------------------------------------------
+422		0x1DD	content2							0x0012	
+------------------------------------------------------------------------------
+423		0x1DF	content3							0x0012	
+------------------------------------------------------------------------------
+424		0x1E1	mem_addr0							0x08000800	
+------------------------------------------------------------------------------
+425		0x1E5	mem_addr1							0x00007d00	
+------------------------------------------------------------------------------
+426		0x1E9	mem_addr2							0x0000000a	
+------------------------------------------------------------------------------
+427		0x1ED	mem_addr3							0x51525251	
+------------------------------------------------------------------------------
+428		0x1F1	sbc_eq_reg							0x0000	
+------------------------------------------------------------------------------
+429		0x1F3	pskeys_enable						0x01	
+------------------------------------------------------------------------------
+430		0x1F4	reserved0[00]	0x00	
+431		0x1F5	reserved0[01]	0xff	
+432		0x1F6	reserved0[02]	0x06	
+433		0x1F7	reserved0[03]	0xff	
+434		0x1F8	0x1F	STMO	0x01	
+435		0x1F9	0x1F	COUNT	0x03	
+436		0x1FA	reserved0[06]	0x06	
+437		0x1FB	reserved0[07]	0xaf	
+438		0x1FC	reserved0[08]	0x08	
+439		0x1FD	reserved0[09]	0x82	
+440		0x1FE	reserved0[10]	0x10	
+441		0x1FF	reserved0[11]	0x0d	
+------------------------------------------------------------------------------
+442		0x200	nvram_app_ready						0xff
+------------------------------------------------------------------------------	
+443		0x201	keyTable[00]	valid:    True	
+444		0x202		bdaddr:   0x2c 0x57 0x31 0xf2 0x94 0x0d 	
+445		0x208		key:      0x5d 0x60 0xd1 0xb2 0x1d 0xa9 0x72 0xcb 0xc8 0x6a 0x1c 0x59 0x27 0x49 0x8b 0x41 	
+446		0x218	keyTable[01]	valid:    True	
+447		0x219		bdaddr:   0x00 0x1a 0x95 0x99 0xbd 0xc5 	
+448		0x21F		key:      0xac 0x9f 0xe4 0x85 0x91 0x8f 0xfa 0x21 0x89 0x68 0x20 0x2e 0x2f 0xa9 0xa8 0x1f 	
+449		0x22F	keyTable[02]	valid:    True	
+450		0x230		bdaddr:   0xc8 0xa8 0x23 0xcf 0x64 0x8e 	
+451		0x236		key:      0x55 0xdd 0x5f 0x6c 0x44 0x62 0x02 0xc9 0x34 0xa2 0x06 0xcc 0x9a 0x17 0x1b 0x92 	
+452		0x246	keyTable[03]	valid:    True	
+453		0x247		bdaddr:   0xf0 0x08 0xf1 0x1e 0x8f 0x4a 	
+454		0x24D		key:      0x1f 0xf9 0xfc 0xd2 0xd1 0xd2 0x06 0x27 0x98 0xac 0xed 0x86 0x70 0x08 0x89 0x65 	
+455		0x25D	keyTable[04]	valid:    True	
+456		0x25E		bdaddr:   0x8c 0x71 0xf8 0xe9 0x35 0x9b 	
+457		0x264		key:      0xca 0x1a 0xbd 0x79 0xbb 0x0a 0xa3 0x9e 0x33 0xe2 0x0c 0x20 0x8e 0x99 0x49 0x03 	
+458		0x274	keyTable[05]	valid:    True	
+459		0x275		bdaddr:   0x78 0x47 0x1d 0x2d 0xe9 0xc9 	
+460		0x27B		key:      0x36 0x35 0x0b 0x23 0xfa 0x12 0xec 0xa5 0xf9 0x66 0x10 0x02 0x3f 0x57 0x4e 0xde 	
+461		0x28B	keyTable[06]	valid:    True	
+462		0x28C		bdaddr:   0x64 0xdb 0x43 0x7e 0x00 0x13 	
+463		0x292		key:      0x27 0x3e 0x8b 0x33 0xe4 0x0b 0x6c 0x10 0x26 0x66 0x68 0xb0 0xeb 0xa9 0x0d 0x15 	
+464		0x2A2	keyTable[07]	valid:    True	
+465		0x2A3		bdaddr:   0x2c 0x57 0x31 0xf2 0x9c 0x99 	
+466		0x2A9		key:      0x32 0x90 0x62 0x4c 0x5e 0x7b 0xa9 0xc3 0x21 0x1a 0xb5 0x62 0x7e 0x64 0xa1 0x38 
+------------------------------------------------------------------------------	
+467		0x2B9	last_device							0x00 0x1a 0x95 0x99 0xbd 0xc5
+------------------------------------------------------------------------------ 	
+468		0x2BF	last_device_profile					0x21	
+------------------------------------------------------------------------------
+469		0x2C0	app_vol_spk							0x01	
+------------------------------------------------------------------------------
+470		0x2C1	app_vol_mic							0x02	
+------------------------------------------------------------------------------
+471		0x2C2	enable								0x31313939	
+------------------------------------------------------------------------------
+472		0x2C6	code_size							0x0050	
+------------------------------------------------------------------------------
+473		0x2C8	code_src							0x0392	
+------------------------------------------------------------------------------
+474		0x2CA	code_des							0x08006900
+------------------------------------------------------------------------------	
+475		0x2CE	matrix[00]	address:         0x00000000	
+476		0x2D2	matrix[00]	ret_opt:		 0x0001	
+477		0x2D4	matrix[00]	enable:         0x0000	
+478		0x2D6	matrix[01]	address:         0x08006921	
+479		0x2DA	matrix[01]	ret_opt:		 0x0001	
+480		0x2DC	matrix[01]	enable:         0x0011	
+481		0x2De	matrix[02]	address:         0x08006911	
+482		0x2E2	matrix[02]	ret_opt:		 0x0001	
+483		0x2E4	matrix[02]	enable:         0x0001	
+484		0x2E6	matrix[03]	address:         0xffffffff	
+485		0x2EA	matrix[03]	ret_opt:		 0xffff	
+486		0x2EC	matrix[03]	enable:         0x0000	
+487		0x2EE	matrix[04]	address:         0xffffffff	
+488		0x2F2	matrix[04]	ret_opt:		 0xffff	
+489		0x2F4	matrix[04]	enable:         0x0000	
+490		0x2F6	matrix[05]	address:         0xffffffff	
+491		0x2FA	matrix[05]	ret_opt:		 0xffff	
+492		0x2FC	matrix[05]	enable:         0x0000	
+493		0x2FE	matrix[06]	address:         0xffffffff	
+494		0x302	matrix[06]	ret_opt:		 0xffff	
+495		0x304	matrix[06]	enable:         0x0000	
+496		0x306	matrix[07]	address:         0xffffffff	
+497		0x30A	matrix[07]	ret_opt:		 0xffff	
+498		0x30C	matrix[07]	enable:         0x0000	
+499		0x30E	matrix[08]	address:         0xffffffff	
+500		0x312	matrix[08]	ret_opt:		 0xffff	
+501		0x314	matrix[08]	enable:         0x0000	
+502		0x316	matrix[09]	address:         0xffffffff	
+503		0x31A	matrix[09]	ret_opt:		 0xffff	
+504		0x31C	matrix[09]	enable:         0x0000	
+505		0x31E	matrix[10]	address:         0xffffffff	
+506		0x322	matrix[10]	ret_opt:		 0xffff	
+507		0x324	matrix[10]	enable:         0x0000	
+508		0x326	matrix[11]	address:         0xffffffff	
+509		0x32A	matrix[11]	ret_opt:		 0xffff	
+510		0x32C	matrix[11]	enable:         0x0000	
+511		0x32E	matrix[12]	address:         0xffffffff	
+512		0x332	matrix[12]	ret_opt:		 0xffff	
+513		0x334	matrix[12]	enable:         0x0000	
+514		0x336	matrix[13]	address:         0xffffffff	
+515		0x33A	matrix[13]	ret_opt:		 0x0621	
+516		0x33C	matrix[13]	enable:         0x0000	
+517		0x33E	matrix[14]	address:         0xffffffff	
+518		0x342	matrix[14]	ret_opt:		 0xffff	
+519		0x344	matrix[14]	enable:         0x0000	
+520		0x346	matrix[15]	address:         0xffffffff	
+521		0x34A	matrix[15]	ret_opt:		 0xffff	
+522		0x34C	matrix[15]	enable:         0x0000	
+523		0x34E	matrix[16]	address:         0xffffffff	
+524		0x352	matrix[16]	ret_opt:		 0xffff	
+525		0x354	matrix[16]	enable:         0x0000	
+526		0x356	matrix[17]	address:         0xffffffff	
+527		0x35A	matrix[17]	ret_opt:		 0xffff	
+528		0x35C	matrix[17]	enable:         0x0000	
+529		0x35E	matrix[18]	address:         0xffffffff	
+530		0x362	matrix[18]	ret_opt:		 0xffff	
+531		0x364	matrix[18]	enable:         0x0000	
+532		0x366	matrix[19]	address:         0xffffffff	
+533		0x36A	matrix[19]	ret_opt:		 0xffff	
+534		0x36C	matrix[19]	enable:         0x0000	
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+535	sbc_size[00]	0x0000	
+536	sbc_des[00]	0xffffffff	
+537	sbc_size[01]	0x0000	
+538	sbc_des[01]	0xffffffff	
+539	sbc_size[02]	0x0000	
+540	sbc_des[02]	0xffffffff	
+541	sbc_size[03]	0x0000	
+542	sbc_des[03]	0xffffffff	
+543	sbc_size[04]	0x0000	
+544	sbc_des[04]	0xffffffff	
+545	sbc_size[05]	0x0000	
+546	sbc_des[05]	0xffffffff	
